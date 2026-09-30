@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talleres | Club Infantil PlenaMente</title>
+  <meta name="description" content="Talleres temáticos y experiencias especiales de Club Infantil PlenaMente para distintos grupos de edad.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER — idéntico en todas las páginas -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="Ir a Inicio - Club Infantil PlenaMente">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="140" height="82">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="index.html" class="primary-nav__link">Inicio</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="nosotros.html" class="primary-nav__link">Nosotros</a>
+          </li>
+          <li class="primary-nav__item primary-nav__item--dropdown">
+            <button class="primary-nav__link primary-nav__link--dropdown is-active" id="serviciosToggle" aria-expanded="false" aria-controls="serviciosMenu">
+              Servicios
+              <span class="primary-nav__chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu" id="serviciosMenu">
+              <li><a href="servicios-club-infantil.html" class="dropdown-menu__link">Club Infantil</a></li>
+              <li><a href="servicios-acompanamiento-familiar.html" class="dropdown-menu__link">Acompañamiento Familiar</a></li>
+              <li><a href="servicios-talleres.html" class="dropdown-menu__link is-active">Talleres</a></li>
+              <li><a href="servicios-procesos-educativos.html" class="dropdown-menu__link">Procesos educativos individualizados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="contacto.html" class="btn-contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BANNER DE INTRODUCCIÓN — tema rojo/salmón -->
+    <section class="svc-hero svc-hero--red">
+      <div class="svc-hero__inner">
+        <div class="svc-hero__text">
+          <h1 class="svc-hero__title">Talleres PlenaMente</h1>
+          <p>
+            Durante diferentes épocas del año desarrollamos talleres temáticos y
+            experiencias especiales dirigidos a diferentes grupos de edad.
+          </p>
+        </div>
+        <div class="carousel svc-hero__carousel" id="talleresCarousel">
+          <div class="carousel__slide is-active">
+            <img src="assets/img/servicios/talleres/IMG_-_TALLERES.webp" alt="Talleres de Club Infantil PlenaMente" class="carousel__img">
+          </div>
+          <div class="carousel__slide">
+            <img src="assets/img/servicios/talleres/IMG_-_TALLERES_.webp" alt="Talleres de Club Infantil PlenaMente" class="carousel__img">
+          </div>
+          <div class="carousel__slide">
+            <img src="assets/img/servicios/talleres/IMG_-_TALLERES_1.webp" alt="Talleres de Club Infantil PlenaMente" class="carousel__img">
+          </div>
+          <div class="carousel__dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID DE TIPOS DE TALLERES -->
+    <section class="svc-tags">
+      <div class="svc-tags__grid">
+        <div class="svc-tag svc-tag--red">Talleres de verano.</div>
+        <div class="svc-tag svc-tag--teal">Experiencias de exploración y movimiento.</div>
+        <div class="svc-tag svc-tag--yellow">Talleres navideños.</div>
+        <div class="svc-tag svc-tag--teal">Talleres artísticos y creativos.</div>
+        <div class="svc-tag svc-tag--yellow">Actividades especiales para diferentes edades.</div>
+        <div class="svc-tag svc-tag--red">Talleres de vacaciones.</div>
+      </div>
+    </section>
+
+    <!-- CARD DE CIERRE — solo texto, fondo rojo suave -->
+    <section class="svc-card-section">
+      <div class="svc-detalle solido-red">
+        <div class="svc-texto__inner" style="padding: 0;">
+          <p>
+            Los talleres tienen un enfoque integral, por lo que no se centran
+            únicamente en una actividad específica, sino que buscan integrar
+            diferentes áreas del desarrollo mediante experiencias lúdicas, creativas
+            y significativas.
+          </p>
+          <p>
+            Cada propuesta se adapta a la edad y características del grupo,
+            procurando que los niños y niñas puedan explorar, crear, experimentar,
+            compartir y disfrutar mientras aprenden.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRANJA DE FOTOS EN BUCLE (mismo mecanismo que en Nosotros) -->
+    <section class="galeria" aria-label="Fotos de Talleres">
+      <div class="galeria__marquee">
+        <ul class="galeria__track">
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA.webp" alt="Foto de Talleres PlenaMente" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_1.webp" alt="Foto de Talleres PlenaMente" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_2.webp" alt="Foto de Talleres PlenaMente" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_3.webp" alt="Foto de Talleres PlenaMente" class="galeria__foto-img"></li>
+        </ul>
+        <ul class="galeria__track" aria-hidden="true">
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA.webp" alt="" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_1.webp" alt="" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_2.webp" alt="" class="galeria__foto-img"></li>
+          <li><img src="assets/img/servicios/talleres/IMG_-_TALLERES_GALERIA_3.webp" alt="" class="galeria__foto-img"></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER — idéntico en todas las páginas -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="120" height="70">
+        <p>Eduquemos niños que no necesiten sanar su infancia</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">El Sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#servicios-footer">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col" id="servicios-footer">
+        <h3 class="site-footer__heading">Servicios</h3>
+        <ul>
+          <li><a href="servicios-club-infantil.html">Club Infantil</a></li>
+          <li><a href="servicios-acompanamiento-familiar.html">Acompañamiento Familiar</a></li>
+          <li><a href="servicios-talleres.html">Talleres</a></li>
+          <li><a href="servicios-procesos-educativos.html">Procesos educativos individualizados</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Contáctanos</h3>
+        <ul>
+          <li><a href="tel:+50660945799">6094-5799</a></li>
+          <li><a href="mailto:Direccion@plenamente.org">Direccion@plenamente.org</a></li>
+        </ul>
+        <div class="site-footer__social">
+          <a href="https://www.instagram.com/centroinfantilplena_mente/" target="_blank" rel="noopener" aria-label="Instagram de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-instagram.svg" alt="" width="30" height="30">
+          </a>
+          <a href="https://www.facebook.com/share/14mqDVATnv8/" target="_blank" rel="noopener" aria-label="Facebook de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-facebook.svg" alt="" width="30" height="30">
+          </a>
+          <a href="#" aria-label="LinkedIn de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-linkedin.svg" alt="" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

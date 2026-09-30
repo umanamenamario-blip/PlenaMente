@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Infantil PlenaMente | Contacto</title>
+  <meta name="description" content="Contáctanos y encuentra la ubicación de Club Infantil PlenaMente en San Ramón, Alajuela.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- HEADER — idéntico en todas las páginas -->
+  <!-- ============================================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="Ir a Inicio - Club Infantil PlenaMente">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="140" height="82">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="index.html" class="primary-nav__link">Inicio</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="nosotros.html" class="primary-nav__link">Nosotros</a>
+          </li>
+          <li class="primary-nav__item primary-nav__item--dropdown">
+            <button class="primary-nav__link primary-nav__link--dropdown" id="serviciosToggle" aria-expanded="false" aria-controls="serviciosMenu">
+              Servicios
+              <span class="primary-nav__chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu" id="serviciosMenu">
+              <li><a href="servicios-club-infantil.html" class="dropdown-menu__link">Club Infantil</a></li>
+              <li><a href="servicios-acompanamiento-familiar.html" class="dropdown-menu__link">Acompañamiento Familiar</a></li>
+              <li><a href="servicios-talleres.html" class="dropdown-menu__link">Talleres</a></li>
+              <li><a href="servicios-procesos-educativos.html" class="dropdown-menu__link">Procesos educativos individualizados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="contacto.html" class="btn-contacto is-active">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================= -->
+    <!-- TÍTULO DE PÁGINA -->
+    <!-- ============================================= -->
+    <section class="page-title">
+      <h1 class="page-title__text">Contáctanos</h1>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FORMULARIO DE CONTACTO — fondo rojo/salmón -->
+    <!-- ============================================= -->
+    <section class="contacto-form">
+      <div class="contacto-form__panel">
+        <!--
+          NOTA: por ahora este formulario es solo visual.
+          Cuando definamos el servicio de envío (EmailJS, Formspree, backend
+          propio, etc.) se conecta aquí mismo, en el atributo "action" o
+          desde js/main.js, sin tener que rehacer el diseño.
+        -->
+        <form class="form-grid" id="contactoForm">
+          <div class="form-field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan...." required>
+          </div>
+
+          <div class="form-field">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Umaña...." required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="info@gmail.com" required>
+          </div>
+
+          <div class="form-field">
+            <label for="telefono">Número de Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+1 012 3456 789">
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje...." required></textarea>
+          </div>
+
+          <div class="form-field--full form-field--submit">
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- UBICACIÓN — fondo turquesa + espacio para Google Maps -->
+    <!-- ============================================= -->
+    <section class="ubicacion">
+      <div class="ubicacion__inner">
+        <div class="ubicacion__text">
+          <h2 class="ubicacion__title">Ubicación</h2>
+          <p>
+            San Ramón, Alajuela, Costa Rica — 30 metros este de los semáforos
+            del Hospital Carlos Luis Valverde Vega. Sede única, de atención presencial.
+          </p>
+          <!-- Enlace a la ubicación exacta en Google Maps (abre en otra pestaña) -->
+          <a href="https://maps.app.goo.gl/Uy9wxUUZq8J1YTw37" class="btn-ver-mas" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </div>
+
+        <!--
+          MAPA DE GOOGLE MAPS (previsualización)
+          Muestra la ficha de "PlenaMente | Centro Infantil Integral" en San Ramón.
+          Para cambiar la ubicación, basta con cambiar el texto después de "q="
+          en el src (los espacios se escriben como "+").
+          El contenedor .ubicacion__map le da el tamaño y los bordes redondeados.
+        -->
+        <div class="ubicacion__map">
+          <iframe class="ubicacion__map-iframe"
+            src="https://maps.google.com/maps?q=PlenaMente+Centro+Infantil+Integral,+San+Ram%C3%B3n,+Alajuela,+Costa+Rica&z=17&output=embed"
+            title="Mapa de ubicación de Club Infantil PlenaMente"
+            allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================= -->
+  <!-- FOOTER — idéntico en todas las páginas -->
+  <!-- ============================================= -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="120" height="70">
+        <p>Eduquemos niños que no necesiten sanar su infancia</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">El Sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#servicios-footer">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col" id="servicios-footer">
+        <h3 class="site-footer__heading">Servicios</h3>
+        <ul>
+          <li><a href="servicios-club-infantil.html">Club Infantil</a></li>
+          <li><a href="servicios-acompanamiento-familiar.html">Acompañamiento Familiar</a></li>
+          <li><a href="servicios-talleres.html">Talleres</a></li>
+          <li><a href="servicios-procesos-educativos.html">Procesos educativos individualizados</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Contáctanos</h3>
+        <ul>
+          <li><a href="tel:+50660945799">6094-5799</a></li>
+          <li><a href="mailto:Direccion@plenamente.org">Direccion@plenamente.org</a></li>
+        </ul>
+        <div class="site-footer__social">
+          <a href="https://www.instagram.com/centroinfantilplena_mente/" target="_blank" rel="noopener" aria-label="Instagram de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-instagram.svg" alt="" width="30" height="30">
+          </a>
+          <a href="https://www.facebook.com/share/14mqDVATnv8/" target="_blank" rel="noopener" aria-label="Facebook de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-facebook.svg" alt="" width="30" height="30">
+          </a>
+          <a href="#" aria-label="LinkedIn de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-linkedin.svg" alt="" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

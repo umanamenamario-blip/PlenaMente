@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Infantil PlenaMente | Inicio</title>
+  <meta name="description" content="Club Infantil PlenaMente: un centro de desarrollo infantil con enfoque integral, personalizado y una metodología activa y vivencial.">
+
+  <!-- Tipografías: Nunito (títulos) y Poppins (cuerpo de texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos general del sitio -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- HEADER / MENÚ PRINCIPAL — se repite en todas las páginas -->
+  <!-- ============================================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <!-- Logo: enlaza siempre a Inicio -->
+      <a href="index.html" class="site-header__logo" aria-label="Ir a Inicio - Club Infantil PlenaMente">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="140" height="82">
+      </a>
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <!-- Navegación principal -->
+      <nav class="primary-nav" id="primaryNav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="index.html" class="primary-nav__link is-active">Inicio</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="nosotros.html" class="primary-nav__link">Nosotros</a>
+          </li>
+
+          <!-- Servicios: no navega directo, despliega submenú con las 4 subpáginas -->
+          <li class="primary-nav__item primary-nav__item--dropdown">
+            <button class="primary-nav__link primary-nav__link--dropdown" id="serviciosToggle" aria-expanded="false" aria-controls="serviciosMenu">
+              Servicios
+              <span class="primary-nav__chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu" id="serviciosMenu">
+              <li><a href="servicios-club-infantil.html" class="dropdown-menu__link">Club Infantil</a></li>
+              <li><a href="servicios-acompanamiento-familiar.html" class="dropdown-menu__link">Acompañamiento Familiar</a></li>
+              <li><a href="servicios-talleres.html" class="dropdown-menu__link">Talleres</a></li>
+              <li><a href="servicios-procesos-educativos.html" class="dropdown-menu__link">Procesos educativos individualizados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botón de contacto, separado de la navegación principal -->
+      <a href="contacto.html" class="btn-contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================= -->
+    <!-- HERO — panel principal con logo y slogan -->
+    <!-- ============================================= -->
+    <section class="hero">
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" class="hero__logo" width="320" height="187">
+        <p class="hero__slogan">Eduquemos niños que no necesiten sanar su infancia</p>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- NUESTROS VALORES — carrusel en bucle -->
+    <!-- ============================================= -->
+    <section class="valores" aria-label="Nuestros valores">
+      <h2 class="valores__title">Nuestros Valores</h2>
+
+      <div class="valores__marquee">
+        <!--
+          Cada pista repite los 4 valores 3 veces seguidas (12 casillas).
+          Esto asegura que la franja sea más ancha que la pantalla más grande,
+          para que durante el desplazamiento SIEMPRE haya casillas cubriendo
+          de lado a lado, sin dejar espacio vacío. La segunda pista es una
+          copia idéntica para que el bucle se vea continuo, sin cortes.
+        -->
+        <ul class="valores__track">
+          <li class="valor-pill valor-pill--yellow">Respeto</li>
+          <li class="valor-pill valor-pill--red">Empatía</li>
+          <li class="valor-pill valor-pill--teal">Dedicación</li>
+          <li class="valor-pill valor-pill--yellow">Excelencia</li>
+          <li class="valor-pill valor-pill--red">Respeto</li>
+          <li class="valor-pill valor-pill--teal">Empatía</li>
+          <li class="valor-pill valor-pill--yellow">Dedicación</li>
+          <li class="valor-pill valor-pill--red">Excelencia</li>
+          <li class="valor-pill valor-pill--teal">Respeto</li>
+          <li class="valor-pill valor-pill--yellow">Empatía</li>
+          <li class="valor-pill valor-pill--red">Dedicación</li>
+          <li class="valor-pill valor-pill--teal">Excelencia</li>
+        </ul>
+        <ul class="valores__track" aria-hidden="true">
+          <li class="valor-pill valor-pill--yellow">Respeto</li>
+          <li class="valor-pill valor-pill--red">Empatía</li>
+          <li class="valor-pill valor-pill--teal">Dedicación</li>
+          <li class="valor-pill valor-pill--yellow">Excelencia</li>
+          <li class="valor-pill valor-pill--red">Respeto</li>
+          <li class="valor-pill valor-pill--teal">Empatía</li>
+          <li class="valor-pill valor-pill--yellow">Dedicación</li>
+          <li class="valor-pill valor-pill--red">Excelencia</li>
+          <li class="valor-pill valor-pill--teal">Respeto</li>
+          <li class="valor-pill valor-pill--yellow">Empatía</li>
+          <li class="valor-pill valor-pill--red">Dedicación</li>
+          <li class="valor-pill valor-pill--teal">Excelencia</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SOBRE NOSOTROS — card con texto + imagen -->
+    <!-- ============================================= -->
+    <section class="sobre-nosotros">
+      <div class="sobre-nosotros__inner">
+        <div class="sobre-nosotros__text">
+          <h2 class="sobre-nosotros__title">Sobre Nosotros</h2>
+          <p>
+            Club Infantil PlenaMente es un centro de desarrollo infantil que ofrece un enfoque
+            integral y personalizado para niños y niñas, mediante una metodología activa y
+            vivencial que promueve el aprendizaje por descubrimiento en un ambiente innovador
+            y no tradicional.
+          </p>
+          <p>
+            Está dirigido a familias que buscan alternativas a la educación convencional.
+          </p>
+          <a href="nosotros.html" class="btn-ver-mas">Ver más</a>
+        </div>
+
+        <img src="assets/img/inicio/IMG_-_SOBRE_NOSOTROS_INICIO.webp" alt="Equipo de Club Infantil PlenaMente" class="sobre-nosotros__img" style="object-position: top;">
+      </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SERVICIOS — grid de 4 cards -->
+    <!-- ============================================= -->
+    <section class="servicios">
+      <h2 class="servicios__title">Servicios</h2>
+
+      <div class="servicios__grid">
+        <!--
+          Cada card lleva un ícono centrado arriba del título.
+          Los íconos están en assets/img/iconos/ y el color va definido
+          dentro de cada archivo .svg: blancos para las cards turquesa y
+          rosada, y negro para la card amarilla (Acompañamiento Familiar).
+          Para cambiar un ícono, basta con reemplazar su archivo .svg
+          manteniendo el mismo nombre.
+        -->
+        <a href="servicios-club-infantil.html" class="svc-card svc-card--teal">
+          <img src="assets/img/iconos/icono-club-infantil.svg" alt="" class="svc-card__icon" width="76" height="76">
+          <h3 class="svc-card__title">Club Infantil</h3>
+        </a>
+
+        <a href="servicios-acompanamiento-familiar.html" class="svc-card svc-card--yellow">
+          <img src="assets/img/iconos/icono-acompanamiento-familiar.svg" alt="" class="svc-card__icon" width="76" height="76">
+          <h3 class="svc-card__title">Acompañamiento Familiar</h3>
+        </a>
+
+        <a href="servicios-talleres.html" class="svc-card svc-card--red">
+          <img src="assets/img/iconos/icono-talleres.svg" alt="" class="svc-card__icon" width="76" height="76">
+          <h3 class="svc-card__title">Talleres</h3>
+        </a>
+
+        <a href="servicios-procesos-educativos.html" class="svc-card svc-card--teal">
+          <img src="assets/img/iconos/icono-procesos-educativos.svg" alt="" class="svc-card__icon" width="76" height="76">
+          <h3 class="svc-card__title">Procesos educativos individualizados</h3>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================= -->
+  <!-- FOOTER — se repite en todas las páginas -->
+  <!-- ============================================= -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+
+      <div class="site-footer__brand">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="120" height="70">
+        <p>Eduquemos niños que no necesiten sanar su infancia</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">El Sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#servicios-footer">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col" id="servicios-footer">
+        <h3 class="site-footer__heading">Servicios</h3>
+        <ul>
+          <li><a href="servicios-club-infantil.html">Club Infantil</a></li>
+          <li><a href="servicios-acompanamiento-familiar.html">Acompañamiento Familiar</a></li>
+          <li><a href="servicios-talleres.html">Talleres</a></li>
+          <li><a href="servicios-procesos-educativos.html">Procesos educativos individualizados</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Contáctanos</h3>
+        <ul>
+          <!-- Teléfono y correo oficiales del centro -->
+          <li><a href="tel:+50660945799">6094-5799</a></li>
+          <li><a href="mailto:Direccion@plenamente.org">Direccion@plenamente.org</a></li>
+        </ul>
+        <div class="site-footer__social">
+          <!-- Enlaces a redes sociales (abren en otra pestaña). LinkedIn sigue pendiente: reemplazar "#" por su enlace real -->
+          <a href="https://www.instagram.com/centroinfantilplena_mente/" target="_blank" rel="noopener" aria-label="Instagram de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-instagram.svg" alt="" width="30" height="30">
+          </a>
+          <a href="https://www.facebook.com/share/14mqDVATnv8/" target="_blank" rel="noopener" aria-label="Facebook de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-facebook.svg" alt="" width="30" height="30">
+          </a>
+          <a href="#" aria-label="LinkedIn de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-linkedin.svg" alt="" width="30" height="30">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script del sitio: dropdown de Servicios, menú móvil y carrusel de valores -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompañamiento Familiar | Club Infantil PlenaMente</title>
+  <meta name="description" content="Espacios de acompañamiento y orientación familiar de Club Infantil PlenaMente.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER — idéntico en todas las páginas -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="Ir a Inicio - Club Infantil PlenaMente">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="140" height="82">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="index.html" class="primary-nav__link">Inicio</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="nosotros.html" class="primary-nav__link">Nosotros</a>
+          </li>
+          <li class="primary-nav__item primary-nav__item--dropdown">
+            <button class="primary-nav__link primary-nav__link--dropdown is-active" id="serviciosToggle" aria-expanded="false" aria-controls="serviciosMenu">
+              Servicios
+              <span class="primary-nav__chevron" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu" id="serviciosMenu">
+              <li><a href="servicios-club-infantil.html" class="dropdown-menu__link">Club Infantil</a></li>
+              <li><a href="servicios-acompanamiento-familiar.html" class="dropdown-menu__link is-active">Acompañamiento Familiar</a></li>
+              <li><a href="servicios-talleres.html" class="dropdown-menu__link">Talleres</a></li>
+              <li><a href="servicios-procesos-educativos.html" class="dropdown-menu__link">Procesos educativos individualizados</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="contacto.html" class="btn-contacto">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BANNER DE INTRODUCCIÓN — tema amarillo -->
+    <section class="svc-hero svc-hero--yellow">
+      <div class="svc-hero__inner">
+        <div class="svc-hero__text">
+          <h1 class="svc-hero__title">Acompañamiento Familiar</h1>
+          <p>
+            En PlenaMente entendemos que acompañar a un niño también significa
+            acompañar a quienes forman parte de su entorno.
+          </p>
+          <p>
+            Por eso ofrecemos espacios de acompañamiento y orientación familiar para
+            diferentes situaciones relacionadas con el desarrollo y la experiencia
+            escolar de los niños y niñas.
+          </p>
+        </div>
+        <img src="assets/img/servicios/acompanamiento-familiar/IMG_-_ACOMPANAMIENTO_FAMILIAR_-_INICIO.webp" alt="Familia acompañada por Club Infantil PlenaMente" class="svc-hero__img foto-acompanamiento-inicio" style="aspect-ratio: 5 / 4;">
+      </div>
+    </section>
+
+    <!-- LISTA DE PROCESOS — sin card, directo sobre blanco -->
+    <section class="svc-lista-section">
+      <div class="svc-lista-section__inner">
+        <div>
+          <h2 class="svc-lista-section__title">Podemos acompañar a las familias en procesos como:</h2>
+          <ul>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Adaptación a nuevos espacios educativos.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Ingreso o transición a centros educativos.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Cambios de institución o de grupo.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Procesos de adaptación escolar.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Dificultades relacionadas con rutinas y hábitos.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Acompañamiento ante diferentes retos dentro del contexto educativo.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Orientación a las familias sobre estrategias para favorecer el aprendizaje y desarrollo en casa.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Seguimiento de procesos individuales.</li>
+            <li><span class="svc-bullet-dot svc-bullet-dot--yellow"></span>Comunicación y articulación entre familia y centro educativo.</li>
+          </ul>
+        </div>
+        <img src="assets/img/servicios/acompanamiento-familiar/IMG_-_ACOMPANAMIENTO_FAMILIAR_-_PROCESOS.webp" alt="Acompañamiento familiar en Club Infantil PlenaMente" class="svc-lista-section__img foto-acompanamiento-procesos">
+      </div>
+    </section>
+
+    <!-- NOTA DESTACADA — fondo amarillo suave -->
+    <section class="svc-texto solido-teal">
+      <div class="svc-texto__inner" style="max-width: 760px;">
+        <p>
+          Este acompañamiento busca brindar a las familias herramientas, orientación
+          y estrategias prácticas, respetando siempre las características particulares
+          de cada niño y evitando abordajes estandarizados.
+        </p>
+        <p>Una propuesta que acompaña cada etapa.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER — idéntico en todas las páginas -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img src="assets/img/logo-plenamente.svg" alt="Logo Club Infantil PlenaMente" width="120" height="70">
+        <p>Eduquemos niños que no necesiten sanar su infancia</p>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">El Sitio</h3>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="#servicios-footer">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col" id="servicios-footer">
+        <h3 class="site-footer__heading">Servicios</h3>
+        <ul>
+          <li><a href="servicios-club-infantil.html">Club Infantil</a></li>
+          <li><a href="servicios-acompanamiento-familiar.html">Acompañamiento Familiar</a></li>
+          <li><a href="servicios-talleres.html">Talleres</a></li>
+          <li><a href="servicios-procesos-educativos.html">Procesos educativos individualizados</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__col">
+        <h3 class="site-footer__heading">Contáctanos</h3>
+        <ul>
+          <li><a href="tel:+50660945799">6094-5799</a></li>
+          <li><a href="mailto:Direccion@plenamente.org">Direccion@plenamente.org</a></li>
+        </ul>
+        <div class="site-footer__social">
+          <a href="https://www.instagram.com/centroinfantilplena_mente/" target="_blank" rel="noopener" aria-label="Instagram de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-instagram.svg" alt="" width="30" height="30">
+          </a>
+          <a href="https://www.facebook.com/share/14mqDVATnv8/" target="_blank" rel="noopener" aria-label="Facebook de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-facebook.svg" alt="" width="30" height="30">
+          </a>
+          <a href="#" aria-label="LinkedIn de PlenaMente" class="social-icon">
+            <img src="assets/img/iconos/redes/icono-linkedin.svg" alt="" width="30" height="30">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
